@@ -15,14 +15,14 @@
             @auth
                 <nav class="flex gap-4 items-center"> <!-- Ajusté gap-2 a gap-4 -->
                     <a class="font-bold  text-gray-600 text-sm" href="#">Hola: <span class="font-normal"> {{ auth()->user()->username}}</span></a>
-                    <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('register')}}">Cerrar Sesión</a>
-                </nav>    
+                    <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('logout')}}">Cerrar Sesión</a>
+                </nav>
             @endauth
             @guest
                 <nav class="flex gap-4 items-center"> <!-- Ajusté gap-2 a gap-4 -->
                     <a class="font-bold uppercase text-gray-600 text-sm" href="#">Login</a>
                     <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('register')}}">Crear Cuenta</a>
-                </nav>            
+                </nav>
             @endguest
         </div>
     </header>
