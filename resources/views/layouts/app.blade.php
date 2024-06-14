@@ -12,8 +12,6 @@
             <h1 class="text-3xl font-black">
                 DevStagram
             </h1>
-
-            <nav class="flex gap-4 items-center"> <!-- Ajusté gap-2 a gap-4 -->
             @auth
                 <nav class="flex gap-4 items-center"> <!-- Ajusté gap-2 a gap-4 -->
                     <a class="font-bold  text-gray-600 text-sm" href="#">Hola: <span class="font-normal"> {{ auth()->user()->username}}</span></a>
