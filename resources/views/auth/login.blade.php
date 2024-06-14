@@ -20,14 +20,14 @@
                 @endif
 
                 <div class="mb-5">
-                    <label  for="email" 
+                    <label  for="email"
                             class="mb-2 block uppercase text-gray-500 font-bold">
                         Email
                     </label>
-                    <input  id="email" 
-                            name="email" 
-                            type="email" 
-                            placeholder="Tu Email de Registro" 
+                    <input  id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Tu Email de Registro"
                             class="border p-3 w-full rounded-lg @error('email')
                                 border-red-500
                             @enderror"
@@ -41,14 +41,14 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label  for="password" 
+                    <label  for="password"
                             class="mb-2 block uppercase text-gray-500 font-bold">
                         Password
                     </label>
-                    <input  id="password" 
-                            name="password" 
-                            type="password" 
-                            placeholder="Password de Registro" 
+                    <input  id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Password de Registro"
                             class="border p-3 w-full rounded-lg @error('password')
                                 border-red-500
                             @enderror"
@@ -57,8 +57,13 @@
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                             {{ $message }}
                         </p>
-                    @enderror                    
+                    @enderror
                 </div>
+
+                <div class="mb-5">
+                    <input type="checkbox" name="remember"> <label class="text-gray-500 text-sm">Mantener mi Sesión Abierta</label>
+                </div>
+
                 <input  type="submit"
                         value="Iniciar Sesión"
                         class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">
